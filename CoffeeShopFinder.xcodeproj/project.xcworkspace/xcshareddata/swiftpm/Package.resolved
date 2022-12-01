@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "activityview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftUI-Plus/ActivityView.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "a53e1f09254f9280f04a6b14c05865c702d2d5eb"
+      }
+    }
+  ],
+  "version" : 2
+}

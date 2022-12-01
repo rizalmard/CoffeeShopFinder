@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841D61D529380D0500E0730C /* ActivityView in Frameworks */ = {isa = PBXBuildFile; productRef = 841D61D429380D0500E0730C /* ActivityView */; };
 		842C90172928684B002C2461 /* CoffeeShopFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C90162928684B002C2461 /* CoffeeShopFinderApp.swift */; };
-		842C90192928684B002C2461 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C90182928684B002C2461 /* ContentView.swift */; };
+		842C90192928684B002C2461 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C90182928684B002C2461 /* MainView.swift */; };
 		842C901B2928684E002C2461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842C901A2928684E002C2461 /* Assets.xcassets */; };
 		842C901E2928684E002C2461 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842C901D2928684E002C2461 /* Preview Assets.xcassets */; };
 		842C902729286946002C2461 /* CoffeeShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C902629286946002C2461 /* CoffeeShopModel.swift */; };
@@ -19,7 +20,7 @@
 /* Begin PBXFileReference section */
 		842C90132928684B002C2461 /* CoffeeShopFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShopFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842C90162928684B002C2461 /* CoffeeShopFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopFinderApp.swift; sourceTree = "<group>"; };
-		842C90182928684B002C2461 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		842C90182928684B002C2461 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		842C901A2928684E002C2461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842C901D2928684E002C2461 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		842C902629286946002C2461 /* CoffeeShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopModel.swift; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841D61D529380D0500E0730C /* ActivityView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +62,7 @@
 				842C9025292868ED002C2461 /* View */,
 				842C9024292868D8002C2461 /* Model */,
 				842C90162928684B002C2461 /* CoffeeShopFinderApp.swift */,
-				842C90182928684B002C2461 /* ContentView.swift */,
+				842C90182928684B002C2461 /* MainView.swift */,
 				842C901A2928684E002C2461 /* Assets.xcassets */,
 				842C901C2928684E002C2461 /* Preview Content */,
 			);
@@ -108,6 +110,9 @@
 			dependencies = (
 			);
 			name = CoffeeShopFinder;
+			packageProductDependencies = (
+				841D61D429380D0500E0730C /* ActivityView */,
+			);
 			productName = CoffeeShopFinder;
 			productReference = 842C90132928684B002C2461 /* CoffeeShopFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -136,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 842C900A2928684B002C2461;
+			packageReferences = (
+				841D61D329380D0500E0730C /* XCRemoteSwiftPackageReference "ActivityView" */,
+			);
 			productRefGroup = 842C90142928684B002C2461 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				842C902929286B35002C2461 /* CoffeeShopListView.swift in Sources */,
-				842C90192928684B002C2461 /* ContentView.swift in Sources */,
+				842C90192928684B002C2461 /* MainView.swift in Sources */,
 				842C90172928684B002C2461 /* CoffeeShopFinderApp.swift in Sources */,
 				842C902729286946002C2461 /* CoffeeShopModel.swift in Sources */,
 				842C902B29286B43002C2461 /* CoffeeShopDetailView.swift in Sources */,
@@ -367,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		841D61D329380D0500E0730C /* XCRemoteSwiftPackageReference "ActivityView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUI-Plus/ActivityView.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		841D61D429380D0500E0730C /* ActivityView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 841D61D329380D0500E0730C /* XCRemoteSwiftPackageReference "ActivityView" */;
+			productName = ActivityView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 842C900B2928684B002C2461 /* Project object */;
 }
